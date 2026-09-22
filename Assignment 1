@@ -1,0 +1,22 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+        String name = "Zachary Carpenter";
+        String jobTitle = "Help Desk Manager";
+        String department = "Advanced Technical Support";
+        int yearsOfExperience = 5;
+        double hourlyPayRate = 33.85;
+        final int HOURS_PER_WEEK = 40;
+        double weeklyGrossPay = hourlyPayRate * HOURS_PER_WEEK;
+
+        System.out.println("IT Employee Profile");
+        System.out.println("-------------------");
+        System.out.println("Name: " + name);
+        System.out.println("Title: " + jobTitle);
+        System.out.println("Department: " + department);
+        System.out.println("Experience: " + yearsOfExperience + " years");
+        System.out.printf("Hourly Rate: $%.2f%n", hourlyPayRate);
+        System.out.printf("Weekly Pay: $%.2f%n", weeklyGrossPay);
+    }
+} 
