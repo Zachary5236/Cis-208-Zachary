@@ -17,12 +17,14 @@ public class StudentProfile {
  
  
         // Display student profile
- System.out.println("-------" + "StudentProfile" + "-------");
+ System.out.println("=======" + "StudentProfile" + "=======");
  System.out.println("College:" + COLLEGE_NAME);
  System.out.println( "studentName:" + studentName);
  System.out.println("age:" + age);
  System.out.println("gpa" + gpa);
  System.out.println("grade:" + grade);
  System.out.println("enrolled:" + true);
+ System.out.println("=============================");
     }
 }
+
