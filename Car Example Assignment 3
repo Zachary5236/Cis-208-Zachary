@@ -1,0 +1,52 @@
+class Car {
+
+String make;
+
+String model;
+
+int year;
+
+int speed;
+
+void accelerate() {
+    speed = speed + 10;
+}
+
+void DisplaySpeed() {
+  System.out.println("Cirrent Speed: " + speed + " mph");
+}
+
+  void displayInfo() {
+
+    System.out.println("Make: " + make);
+
+    System.out.println("Model: " + model);
+
+    System.out.println("Year: " + year);
+    
+    System.out.println("speed: " + speed);
+  
+  }
+
+}
+
+public class Main {
+
+  public static void main(String[] args) {
+ 
+ Car car1 = new Car();
+
+ car1.make = "Cheverolet";
+ car1.model = "Trax";
+car1.year = 2017;
+car1.speed = 25;
+
+car1.accelerate();
+car1.accelerate();
+
+car1.displayInfo();
+
+
+
+  }
+}
