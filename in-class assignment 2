@@ -34,13 +34,11 @@ public class Main {
         account2.balance = 500.00;
 
         account1.deposit(200.00);
-        account1.deposit(100.00);
         account1.withdraw(150.00);
         account1.withdraw(50.00);
 
         account2.deposit(300.00);
         account2.deposit(100.00);
-        account2.withdraw(200.00);
         account2.withdraw(50.00);
 
         System.out.println("Account 1:");
