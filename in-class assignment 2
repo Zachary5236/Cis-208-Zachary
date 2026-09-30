@@ -1,0 +1,52 @@
+public class Main {
+
+    static class BankAccount {
+        String owner;
+        String accountNumber;
+        double balance;
+
+        void deposit(double amount) {
+            balance += amount;
+        }
+
+        void withdraw(double amount) {
+            balance -= amount;
+        }
+
+        void displayAccountInfo() {
+            System.out.println("Owner: " + owner);
+            System.out.println("Account Number: " + accountNumber);
+            System.out.println("Balance: $" + balance);
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+
+        BankAccount account1 = new BankAccount();
+        account1.owner = "Zach";
+        account1.accountNumber = "1081";
+        account1.balance = 1000.00;
+
+        BankAccount account2 = new BankAccount();
+        account2.owner = "Zaria";
+        account2.accountNumber = "1082";
+        account2.balance = 500.00;
+
+        account1.deposit(200.00);
+        account1.deposit(100.00);
+        account1.withdraw(150.00);
+        account1.withdraw(50.00);
+
+        account2.deposit(300.00);
+        account2.deposit(100.00);
+        account2.withdraw(200.00);
+        account2.withdraw(50.00);
+
+        System.out.println("Account 1:");
+        account1.displayAccountInfo();
+
+        System.out.println("Account 2:");
+        account2.displayAccountInfo();
+    }
+}
