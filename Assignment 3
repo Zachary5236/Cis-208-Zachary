@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class ITSupportTicket {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter User Name: ");
+        String userName = scanner.nextLine();
+
+        System.out.print("Enter Computer Name: ");
+        String computerName = scanner.nextLine();
+
+        System.out.print("Enter Problem Description: ");
+        String problemDescription = scanner.nextLine();
+
+        System.out.print("Enter Priority (Low/Medium/High): ");
+        String priority = scanner.nextLine();
+
+        System.out.println("\n===== IT Support Ticket =====");
+        System.out.println("User Name: " + userName);
+        System.out.println("Computer Name: " + computerName);
+        System.out.println("Problem Description: " + problemDescription);
+        System.out.println("Priority: " + priority);
+
+        scanner.close();
+    }
+}
