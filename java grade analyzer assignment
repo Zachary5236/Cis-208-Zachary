@@ -1,0 +1,35 @@
+package GradeAnalyzer;
+public class GradeAnalyzer {
+
+    public static void main(String[] args) {
+
+        int[] grades = {85, 92, 78, 96, 88};
+
+        int total = 0;
+        int highest = grades[0];
+        int count = 0;
+
+        System.out.println("Grades:");
+
+        for (int i = 0; i < grades.length; i++) {
+            System.out.println(grades[i]);
+
+            total = total + grades[i];
+
+            if (grades[i] > highest) {
+                highest = grades[i];
+            }
+
+            if (grades[i] >= 80) {
+                count = count + 1;
+            }
+        }
+
+        double average = total / 5.0;
+
+        System.out.println("Total: " + total);
+        System.out.println("Average: " + average);
+        System.out.println("Highest: " + highest);
+        System.out.println("Students with 80 or higher: " + count);
+    }
+}
