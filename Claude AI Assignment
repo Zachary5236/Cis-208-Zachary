@@ -1,0 +1,36 @@
+package GradeCalculator;
+public class GradeCalculator {
+
+    public static void main(String[] args) {
+
+        String studentName = "Jordan";
+        int score1 = 85;
+        int score2 = 90;
+        int score3 = 78;
+        int score4 = 87;
+
+        double average = (score1 + score2 + score3 + score4) / 3.0;
+
+        char letterGrade;
+
+        if (average >= 90) {
+            letterGrade = 'A';
+        } else if (average >= 80) {
+            letterGrade = 'B';
+        } else if (average >= 70) {
+            letterGrade = 'C';
+        } else if (average >= 60) {
+            letterGrade = 'D';
+        } else {
+            letterGrade = 'F';
+        }
+
+        System.out.println("\n===== Final Grade =====");
+        
+        System.out.println("Student: " + studentName);
+
+        System.out.printf("Average: %.2f%n", average);
+
+        System.out.println("Letter Grade: " + letterGrade);
+    }
+}
