@@ -1,0 +1,79 @@
+package Javainheritance;
+
+
+public class Vehicle {
+
+ String brand;
+ int year;
+
+ public Vehicle(String brand, int year) {
+     this.brand = brand;
+     this.year = year;
+ }
+
+ public void displayInfo() {
+     System.out.println("Vehicle Brand: " + brand);
+     System.out.println("Vehicle Year: " + year);
+ }
+
+ public void startEngine() {
+     System.out.println("The vehicle engine is starting.");
+ }
+}
+
+
+
+
+package Javainheritance;
+
+
+//Car.java
+//Child class that inherits from Vehicle
+
+public class Car extends Vehicle {
+
+ // Additional instance variable
+ int numberOfDoors;
+
+ // Constructor uses super() to initialize Vehicle information
+ public Car(String brand, int year, int numberOfDoors) {
+     super(brand, year);
+     this.numberOfDoors = numberOfDoors;
+ }
+
+ // Displays vehicle information and number of doors
+ public void displayCarInfo() {
+     displayInfo();
+     System.out.println("Number of Doors: " + numberOfDoors);
+ }
+
+ // Makes the car honk
+ public void honk() {
+     System.out.println("Beep! Beep!");
+ }
+}
+
+
+
+package Javainheritance;
+
+public class Main {
+
+ public static void main(String[] args) {
+
+     // Create a Car object using the constructor
+     Car myCar = new Car("Toyota", 2024, 4);
+
+     // Display car information
+     myCar.displayCarInfo();
+
+     // Call inherited method from Vehicle
+     myCar.startEngine();
+
+     // Call the honk method from Car
+     myCar.honk();
+ }
+}
+
+
+
