@@ -26,28 +26,19 @@ public class Vehicle {
 
 package Javainheritance;
 
-
-//Car.java
-//Child class that inherits from Vehicle
-
 public class Car extends Vehicle {
 
- // Additional instance variable
  int numberOfDoors;
 
- // Constructor uses super() to initialize Vehicle information
  public Car(String brand, int year, int numberOfDoors) {
      super(brand, year);
      this.numberOfDoors = numberOfDoors;
  }
 
- // Displays vehicle information and number of doors
  public void displayCarInfo() {
      displayInfo();
      System.out.println("Number of Doors: " + numberOfDoors);
  }
-
- // Makes the car honk
  public void honk() {
      System.out.println("Beep! Beep!");
  }
@@ -61,16 +52,12 @@ public class Main {
 
  public static void main(String[] args) {
 
-     // Create a Car object using the constructor
      Car myCar = new Car("Toyota", 2024, 4);
 
-     // Display car information
      myCar.displayCarInfo();
 
-     // Call inherited method from Vehicle
      myCar.startEngine();
 
-     // Call the honk method from Car
      myCar.honk();
  }
 }
