@@ -1,0 +1,40 @@
+package Interfaces;
+public interface Vehicle {
+    void start();
+}
+
+package Interfaces;
+
+public class Car implements Vehicle {
+	 
+    @Override
+    public void start() {
+        System.out.println("Car is starting");
+    }
+}
+
+package Interfaces;
+
+public class Motorcycle implements Vehicle {
+	 
+    @Override
+    public void start() {
+        System.out.println("Motorcycle is starting");
+    }
+}
+
+package Interfaces;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Vehicle[] vehicles = {
+            new Car(),
+            new Motorcycle()
+        };
+
+        for (Vehicle v : vehicles) {
+            v.start();
+        }
+    }
+}
